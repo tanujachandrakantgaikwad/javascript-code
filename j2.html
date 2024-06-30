@@ -1,0 +1,44 @@
+<html>
+ <body>
+  <form>
+    Roll no:
+    <input type="number" id="t1"><br>
+    Enter address:
+    <input type="text" id="t2"><br>
+    Gender:<br>
+    <input type="radio" id="r1" value="mela">male
+    <input type="radio" id="r1" value="female">female <br>
+    Subject:
+    <input type="checkbox" id="c1" value="java">java <br>
+    <input type="checkbox" id="c2" value="php">php <br>
+    <input type="checkbox" id="c3" value="c++">c++ <br>
+   <input type="checkbox" id="c4" value="javascript">javascript <br>
+   Class:<br>
+    <select id="t3">
+      <option value="FY">FY</option>
+      <option value="SY">SY</option>
+      <option value="FY">TY</option>
+     </select><br><br>
+   <input type="button" value="submit" onclick="show()">
+ </form>
+ </body>
+</html>
+<script language="javascript">
+  function show()
+   {
+    var r=document.getElementById("t1").value;
+    var a=document.getElementById("t2").value;
+    var g=document.getElementById("r1").value;
+    var s1=document.getElementById("c1").value;
+    var s2=document.getElementById("c2").value;
+    var s3=document.getElementById("c3").value;
+    var s4=document.getElementById("c4").value;
+    var c=document.getElementById("t3").value;
+  
+    document.write("<br>Roll no="+r);
+    document.write("<br>Address="+a);
+    document.write("<br>Genter="+g);
+    document.write("<br>subject="+s1+s2+s3);
+    document.write("<br>class="+c);
+    }
+</script>

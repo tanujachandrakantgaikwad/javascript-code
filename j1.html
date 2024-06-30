@@ -1,0 +1,22 @@
+<html>
+  <body>
+   <form>
+   Enter number:
+    <input type="number" placeholder="number" id="t1"><br>
+  
+  <input type="button" value="ok" onclick="show()">
+  </form>  
+</body>
+</html>
+<script language="javascript">
+ function show()
+ {
+   var a=document.getElementById("t1").value;
+   if(a<=0)
+     document.getElementById("t2").value="-ve age not allowed";
+   else if(a>100)
+     alert("age greater than 100 not allowed");
+   else
+     alert("age="+a);
+ }
+</script>

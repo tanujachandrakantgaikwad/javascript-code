@@ -1,0 +1,25 @@
+<html>
+  <body>
+   <form>
+     Pan card:
+     <input type="text" id="t1"><br>
+     <input type="submit" value="ok" onclick="validation()">
+   </form>
+ </body>
+</html> 
+<script>
+  function validation()
+ {
+   var s1=document.getElementById("t1").value;
+   var pat=[a-z]{5}[0-9]{4}[a-z]{1};
+  
+   if(s1.match(pat))
+ { 
+  alert("valid pan code:"+s1);
+ }
+ else
+ {
+  alert("invalid pan code:"+s1);
+ } 
+}
+</script>
